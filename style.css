@@ -2,6 +2,54 @@ h1 {
     color: black;
 }
 
+.calculator-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.calculator-container>button {
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.calculator-display {
+    justify-content: flex-end;
+    grid-column: 1 / -1;
+    border: 2px solid black;
+}
+
+.calculator-display .current-operand {
+    font-size: 1.5rem;
+}
+
+.calculator-display .previous-operand {
+    font-size: 2.5rem;
+}
+
+.clear {
+    grid-column: span 2;
+}
+
+.equals {
+    grid-column: span 2;
+}
+
+.calculator-display .previous-operand {
+    font-size: 1.5rem;
+  }
+  
+  .calculator-display .current-operand {
+    font-size: 1.5rem;
+    padding-top: 7px;
+  }
+
+/*
 table {
     border: 2px solid black;
     width: 35%;
@@ -29,3 +77,4 @@ input[type="text"] {
     font-size: 24px;
     font-weight: bold;
 }
+*/
